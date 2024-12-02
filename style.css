@@ -1,0 +1,76 @@
+:root {
+  --dark-bg: hsl(0, 0%, 12%);
+  --light-text: hsl(0, 0%, 100%);
+  --accent-color: hsl(75, 94%, 57%);
+  --secondary-bg: hsl(209, 23%, 22%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: hsl(0, 0%, 8%);
+  color: var(--light-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: var(--dark-bg);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid var(--light-text);
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.location {
+  color: var(--accent-color);
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.bio {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: grid;
+  gap: 10px;
+}
+
+.social-link {
+  text-decoration: none;
+  color: var(--light-text);
+  background: var(--secondary-bg);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: var(--accent-color);
+  color: var(--dark-bg);
+}
